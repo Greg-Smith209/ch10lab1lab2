@@ -209,17 +209,41 @@ padding-left: 0%;
  .desktop{
 
  }
+ #nav-links{
+   display-none;
+ }
 
  .mobile{
    display: none;
+   margin: 2% 0 0 3%;
  }
  /* tablet viewport: style rules for nav area */
  .nav li a{
-   border-top: none;
-   display: inline-block;
-   font-size: 1.25em;
+
+
    padding: 0.5em;
  }
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+  }
+  .mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+    }
+    .nav-icon div {
+      height: 40px;
+      width: 40px;
+      color: #2a1f14;
+      }
 
  .grid{
    grid-template-columns: 1;
@@ -242,6 +266,17 @@ padding-left: 0%;
  #form h2{
 
  }
+#questions p {
+  cursor: pointer;}#answer  {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    }
+    #answer h2 {
+      display: none;
+      }
+
 }
  /* media query for tablet viewport */
 @media screen (min-width: 620px), print{
@@ -269,6 +304,10 @@ padding-left: 0%;
 aside{
   grid-column: 1 / span 2;
 
+}
+
+.mobile-nav{
+  display: none;
 }
 
 /* tablet viewport: style rule for form element */
