@@ -18,10 +18,23 @@ href="images/apple- touch-icon.png"><link rel="icon" sizes="192x192" href="image
   <title>Strike a Chord: Template</title>
 </head>
 <body>
+  <!-- Mobile Nav -->
+  <nav  class="mobile-nav">
+    <div id="menu-links">
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="instructors.html">Instructors</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+      <div>&#9776;</div>   </a>
+    </nav>
+
 <header>
 <h1>&#9836; Strike a Chord &#9836;</h1>
 </header>
-<nav>
+<nav class="tab-desk">
   <!-- Hero Image-->
   <div id="tab-desk">
     <img src="images/music-notes.png" alt="colorful music notes">
@@ -94,4 +107,6 @@ href="images/apple- touch-icon.png"><link rel="icon" sizes="192x192" href="image
       </div>
 
     </main>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
